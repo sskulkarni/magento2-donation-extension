@@ -1,0 +1,25 @@
+<div id="block-donation" class="block donation" data-mage-init='{"collapsible":{"openedState": "active", "saveState": true}}'>
+    <div class="title" data-role="title">
+        <strong id="block-donation-heading" role="heading" aria-level="2">
+            <?php echo __('Donation');?>
+        </strong>
+    </div>
+    <div class="content" data-role="content" aria-labelledby="block-donation-heading" id="donation-component" data-bind="scope:'donationcomponent'">
+        <!-- ko template: getTemplate() --><!-- /ko -->
+        <script type="text/x-magento-init">
+        {
+            "#donation-component": {
+                "Magento_Ui/js/core/app": {
+                   "components": {
+                        "donationcomponent": {
+                            "component": "Krishaweb_Donation/js/view/donation-component"
+                        }
+                    }
+                }
+            }
+        }
+        </script>
+    </div>
+</div>
+
+
